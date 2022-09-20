@@ -81,7 +81,6 @@ PRODUCT_PACKAGES += \
     gatekeeper.exynos9611 \
     gralloc.exynos9611 \
     hwcomposer.exynos9611 \
-    memtrack.exynos9611 \
     libExynosHWCService \
     libExynosOMX_Core \
     libExynosOMX_Resourcemanager \
