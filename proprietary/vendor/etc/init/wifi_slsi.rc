@@ -29,7 +29,12 @@ on post-fs-data
     chown wifi wifi /dev/mx_client_test_0
     chmod 0666 /dev/mx_client_test_0	
     chown wifi wifi /dev/scsc_log_collector_0
-    chmod 0666 /dev/scsc_log_collector_0 
+    chmod 0666 /dev/scsc_log_collector_0
+
+    chown wifi wifi /sys/wifi/wifiver
+    chmod 0640 /sys/wifi/wifiver
+    chown wifi wifi /sys/wifi/softap
+    chmod 0640 /sys/wifi/softap
     chown wifi wifi /sys/wifi/memdump
     chmod 0644 /sys/wifi/memdump
 	
@@ -39,9 +44,23 @@ on post-fs-data
     chown wifi wifi /sys/wifi/pm
     chmod 0640 /sys/wifi/pm
 
+    # for WIFI Antenna Selection
+    chown wifi wifi /data/vendor/conn/.ant.info
+    chmod 0644 /data/vendor/conn/.ant.info
+    chown wifi wifi /sys/wifi/ant
+    chmod 0640 /sys/wifi/ant
+
 on fs
 # scsc daemon
+    start wlbtd
+    start wpal
+
 service wlbtd /vendor/bin/wlbtd
+    class main
+    user wifi
+    group wifi inet log sdcard_rw misc
+
+service wpal /vendor/bin/wpal
     class main
     user wifi
     group wifi inet log sdcard_rw misc

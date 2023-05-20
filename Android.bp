@@ -347,14 +347,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "lib_SamsungRec_07001",
+	name: "lib_SamsungRec_07010",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/lib_SamsungRec_07001.so"],
+			srcs: ["proprietary/vendor/lib/lib_SamsungRec_07010.so"],
 		},
 	},
 	compile_multilib: "32",

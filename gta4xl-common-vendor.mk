@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
     sensors.sensorhub \
     libaudioeffectoffload \
     libSamsungPostProcessConvertor \
-    lib_SamsungRec_07001 \
+    lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     libalsautils_sec \
