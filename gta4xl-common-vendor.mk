@@ -80,8 +80,6 @@ PRODUCT_PACKAGES += \
     gatekeeper.exynos9611 \
     libSEF.quram \
     libexynoscamera_plugin \
-    libfloatingfeature \
-    libsecaudioinfo \
     libsecnativefeature \
     libsensorlistener \
     libteecl \
@@ -90,23 +88,11 @@ PRODUCT_PACKAGES += \
     libuuid \
     sensors.grip \
     sensors.sensorhub \
-    libaudioeffectoffload \
-    libSamsungPostProcessConvertor \
-    lib_SamsungRec_07010 \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_soundaliveresampler \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudioproxy \
     libprofileparamstorage \
-    librecordalive \
-    libsamsungDiamondVoice \
     libsecaudiocoreutils \
     libsecril-client.exynos9611 \
     libspatializerparamstorage \
     libwvhidl \
-    libaudioroute.exynos9611 \
-    libtinyalsa.exynos9611 \
     libiwt \
     libkeymaster_helper \
     libskeymaster4device \
