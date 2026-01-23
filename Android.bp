@@ -84,7 +84,7 @@ cc_prebuilt_library_shared {
                 "libion_exynos",
                 "libhwjpeg",
                 "libnativewindow",
-                "//device/samsung/gta4xl-common/shims/stub:libexynoscamera3",
+                "libexynoscamera3",
                 "android.hardware.graphics.allocator@2.0",
                 "libc++",
                 "libc",
@@ -104,7 +104,7 @@ cc_prebuilt_library_shared {
                 "libion_exynos",
                 "libhwjpeg",
                 "libnativewindow",
-                "//device/samsung/gta4xl-common/shims/stub:libexynoscamera3",
+                "libexynoscamera3",
                 "android.hardware.graphics.allocator@2.0",
                 "libc++",
                 "libc",
@@ -1066,4 +1066,10 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/vulkan.universal9611.so",
     symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+cc_library_shared {
+    name: "libexynoscamera3",
+    compile_multilib: "both",
+    soc_specific: true,
 }
